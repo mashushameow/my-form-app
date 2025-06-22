@@ -10077,7 +10077,7 @@ export default function Form() {
     
     try {
       const response = await fetch(
-        "https://mashusha.app.n8n.cloud/webhook-test/form-submit",
+        "https://mashusha.app.n8n.cloud/webhook/form-submit",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -10138,7 +10138,7 @@ export default function Form() {
       console.log("Отправляем на второй webhook - ID:", taskId);
       
       const response = await fetch(
-        `https://mashusha.app.n8n.cloud/webhook-test/form-status?id=${encodeURIComponent(taskId)}`,
+        `https://mashusha.app.n8n.cloud/webhook/form-status?id=${encodeURIComponent(taskId)}`,
         {
           method: "GET",
           headers: { "Content-Type": "application/json" },
